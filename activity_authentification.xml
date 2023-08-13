@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthentificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAuthentification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Authentification"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tvMatricule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matricule :" />
+
+        <EditText
+            android:id="@+id/etNumMDP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvMDP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe :" />
+
+        <EditText
+            android:id="@+id/etMDP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btnValider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="valider"
+            android:text="Se connecter" />
+
+        <TextView
+            android:id="@+id/tvResultat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nouvelle mission"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/tvDebut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Du :" />
+
+        <EditText
+            android:id="@+id/etDebutMission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Date de début"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/tvFin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Au :" />
+
+        <EditText
+            android:id="@+id/etFinMission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Date de fin"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/tvLieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lieu de la mission :" />
+
+        <Spinner
+            android:id="@+id/sVille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btnEnvoyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="envoyer"
+            android:text="Envoyer" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
